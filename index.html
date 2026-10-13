@@ -128,6 +128,14 @@ footer{border-top:1px solid var(--line);padding-top:1.25rem;font-size:.9rem;colo
 footer p{margin:0}
 footer strong{color:var(--fg)}
 footer a{color:var(--action);font-weight:600}
+.partner{display:inline-grid;grid-template-columns:auto 1fr auto;align-items:center;gap:.6rem;text-decoration:none}
+.partner .name{text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+.partner:hover .name{text-decoration-thickness:2px}
+.partner img{width:24px;height:24px;flex:none}
+footer .promo{margin-bottom:.4rem}
+.logo-dark{display:none}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .logo-light{display:none}:root:not([data-theme="light"]) .logo-dark{display:inline}}
+:root[data-theme="dark"] .logo-light{display:none}:root[data-theme="dark"] .logo-dark{display:inline}
 .social{display:inline-flex;align-items:center;gap:.5rem;text-decoration:none}
 .social .name{text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
 .social:hover .name{text-decoration-thickness:2px}
@@ -240,6 +248,7 @@ footer a{color:var(--action);font-weight:600}
   </section>
 
   <footer>
+    <p class="promo"><a class="partner" href="https://www.shiftr.pro/" target="_blank" rel="noopener"><img src="assets/shiftr.png" alt="" width="24" height="24"><span class="name">Aprende a hacer aplicaciones útiles con Shift+R y CentaurUX</span><span class="sr-only"> (se abre en otra pestaña)</span><img class="logo-light" src="assets/centaurux.png" alt="" width="24" height="24"><img class="logo-dark" src="assets/centaurux-blanco.png" alt="" width="24" height="24"></a></p>
     <p>Creado por <strong>Jorge Rebate Serrano</strong> · Licencia <a href="https://creativecommons.org/licenses/by/4.0/deed.es" target="_blank" rel="noopener license">CC BY 4.0</a>: puedes usarlo y adaptarlo citando la autoría.</p>
     <p class="mail">Correo: <code id="mail">jrebateserrano@gmail.com</code> <button class="btn btn-quiet" id="copy" type="button">Copiar correo</button></p>
     <p><a class="social" href="https://www.linkedin.com/in/jrebateserrano/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path class="li-box" d="M22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/><path class="li-in" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 4.892v6.249zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452z"/></svg><span class="name">Jorge Rebate Serrano</span><span class="sr-only"> en LinkedIn (se abre en otra pestaña)</span></a></p>

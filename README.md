@@ -1,6 +1,6 @@
-# Tarjetas de situaciones · Kit de investigación inclusiva
+# Kit de investigación inclusiva
 
-Juego de tarjetas con situaciones reales de investigación UX con personas con discapacidad. Forma parte del Kit de investigación inclusiva.
+Kit abierto para investigar con personas con discapacidad. Tiene cuatro piezas: canvas de preparación, test de adaptación, tarjetas de situaciones y hoja de análisis. Las tarjetas también se pueden jugar en la web.
 
 - `index.html`: el juego y la presentación del kit.
 - `descargas/`: el kit en Word y las tarjetas imprimibles en PDF.
